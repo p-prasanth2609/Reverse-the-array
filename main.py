@@ -1,0 +1,10 @@
+a=list(map(int,input().split()))
+i=0
+b=len(a)-1
+while(i<b):
+    temp=a[i]
+    a[i]=a[b]
+    a[b]=temp
+    i=i+1
+    b=b-1
+print(a)
